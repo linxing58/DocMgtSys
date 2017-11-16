@@ -61,6 +61,7 @@
       <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
       <link rel="stylesheet" href="${contextPath}/resources/dist/css/skins/_all-skins.min.css">
+      <link rel="stylesheet" href="${contextPath}/resources/dist/css/styles.css">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -94,7 +95,7 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
-                           <table id="docDetailsTableAd" class="table table-bordered">
+                           <table id="docDetailsTableAd" class="table table-bordered table-striped">
                               <!-- Header Table -->
                               <thead>
                                  <tr>

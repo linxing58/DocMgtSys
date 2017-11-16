@@ -48,7 +48,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="_csrf" content="${_csrf.token}"/>
       <meta name="_csrf_header" content="${_csrf.headerName}"/>
-      <title>AdminLTE 2 | Blank Page</title>
+      <title>Demo</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <!-- Bootstrap 3.3.6 -->
@@ -62,6 +62,8 @@
       <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
       <link rel="stylesheet" href="${contextPath}/resources/dist/css/skins/_all-skins.min.css">
+      
+      <link rel="stylesheet" href="${contextPath}/resources/dist/css/styles.css">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -69,6 +71,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
       <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+      
    </head>
    <body class="hold-transition skin-blue sidebar-mini">
       <!-- Site wrapper -->
@@ -122,7 +125,7 @@
                   </div>
                   <!-- /.box-header -->
                   <div class="box-body">
-                     <table id="docDetailsTable" class="display">
+                     <table id="docDetailsTable" class="display table table-bordered table-striped">
                         <!-- Header Table -->
                         <thead>
                            <tr>
@@ -136,7 +139,6 @@
                               <th>Created Date</th>
                               <th style="display:none;">Approve By Id</th>
                               <th>Approve By Name</th>
-                              <th>Approve Date</th>
                               <th>Approve Date</th>
                            </tr>
                         </thead>
