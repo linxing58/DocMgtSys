@@ -26,8 +26,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                     .antMatchers("/resources/**", "/registration").permitAll()
-                    .antMatchers("/a/**").hasAuthority("ADMIN").anyRequest().authenticated()
-                    .antMatchers("/d/**").hasAuthority("DOCUMENT_USER").anyRequest().authenticated()
+                    .antMatchers("/a/**").hasAuthority("ADMIN")
+                    .antMatchers("/d/**").hasAuthority("DOCUMENT_USER")
                     .and()
                 .formLogin()
                     .loginPage("/login")
@@ -35,6 +35,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .and()
                 .logout()
                     .permitAll();
+        http.headers().cacheControl().disable();
     }
 
     @Autowired
