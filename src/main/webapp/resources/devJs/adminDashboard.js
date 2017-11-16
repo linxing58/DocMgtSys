@@ -53,13 +53,13 @@ $(document).ready(function() {
 	                var a = '<a href=\'javascript:void(0)\'; onclick=\'rejectedDoc('+row.id+');\'>Rejected</a>'; // row object contains the row data
 	                return a;
 	            }
-	        },{
+	        }/*,{
 	            "mData": null,
 	            "render": function(data,type,row,meta) { // render event defines the markup of the cell text 
 	                var a = '<a href=\'javascript:void(0)\'; onclick=\'docDownlaod('+row.id+');\'>Download</a>'; // row object contains the row data
 	                return a;
 	            }
-	        }]
+	        }*/]
 	    })
 	    $('#docDetailsTableAd').DataTable().ajax.reload();
 	}

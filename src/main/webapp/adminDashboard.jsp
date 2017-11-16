@@ -111,7 +111,7 @@
                                     <th>Approve Date</th>
                                     <th>Approve</th>
                                     <th>Rejected</th>
-                                    <th>Dowload</th>
+                                    <!-- <th>Dowload</th> -->
                                  </tr>
                               </thead>
                               <!-- Footer Table -->
