@@ -18,11 +18,13 @@
       <div class="navbar-custom-menu">
          <ul class="nav navbar-nav">
             <!-- User Account: style can be found in dropdown.less -->
-            <li class="dropdown user user-menu">
+            <li class="user-name"><i class="fa fa-fw fa-user"></i> ${pageContext.request.userPrincipal.name}</li>
+            <li class="user user-menu">
                <form id="logoutForm" method="POST" action="${contextPath}/logout">
                   <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                </form>
-               <a onclick="document.forms['logoutForm'].submit()" href="javascript:void(0);" class="dropdown-toggle">Sign out</a>
+               
+               <a onclick="document.forms['logoutForm'].submit()" href="javascript:void(0);" class="dropdown-toggle"><i class="fa fa-fw fa-sign-out"></i> Sign out</a>
             </li>
             <!-- Control Sidebar Toggle Button -->
             <!-- <li>
