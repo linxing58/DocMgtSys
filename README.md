@@ -15,3 +15,10 @@
 
 ## Run
 ```mvn clean spring-boot:run```
+
+
+##Before run 
+1)execute ../DB/data.sql statment.
+2)for admin login
+username : admin
+pwd: admin123
